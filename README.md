@@ -33,9 +33,10 @@ The input files used by the formatting code to generate the base layout for the 
   - CrossingLinesSorter.java
   - PosterCodeFormatter.java
 
-The Java code used to determine the base layout in the form of a VBA macro. The code is provided without documentation. 'CrossingLinesSorter.java' is used to determine the order of the lines in the first block of the poster, by performing a graph search to minimise the number of line crossings (some debugging info printed to System.err), and displays a demo of the block upon completion. 'PosterCodeFormatter.java' performs the bulk of the formatting, and outputs the macro, generating the base layout as a collection of blocks stacked vertically (see 'poster/Unarranged Poster/pptm').
+The Java code used to determine the base layout in the form of a VBA macro. The code is provided without documentation. 'CrossingLinesSorter.java' is used to determine the order of the lines in the first block of the poster, by performing a graph search to minimise the number of line crossings (some debugging info printed to System.err), and displays a demo of the block upon completion. 'PosterCodeFormatter.java' performs the bulk of the formatting, and outputs the macro, generating the base layout as a collection of blocks stacked vertically (see 'poster/Unarranged Poster/pptm'). The constants used for each block differ in the final poster, but the PosterCodeFormatter will generate all blocks at once.
 
 Run as:
+
 	java CrossingLinesSorter < ../input/part1Events.in > ../input/part1LineOrder.in
 	java PosterCodeFormatter > ../output/runMacro.out
 
