@@ -1,0 +1,167 @@
+166
+110000 begin 0
+110000 begin 2
+110000 begin 4
+110000 begin 6
+110000 begin 9
+131400 multiboth 0 16 0 #Kurisu finishes the Time Leap Machine
+131953 multiminor 0 2 0 #Mayuri is shot by Moeka when Rounders raid the FGL
+131953 multimajor 0 8 0 #Mayuri dies
+131956 multiminor 0 2 0 ##Rintaro time leaps
+131956 multimajor 0 8 0 ##Rintaro time leaps
+131656 timeleap 0 1
+131657 minor 0 1 #Rintaro assumes his memories are a dream
+131656 timeleap 0 2
+131657 minor 0 2 #Rintaro acts on his memories
+131834 minor 0 2 #Rintaro and Mayuri head to a train station
+131930 minor 0 2 #Rintaro and Mayuri are unable to board a train and are ambushed by Rounders
+131953 minor 0 2 #Moeka hits Mayuri with a car
+132017 minor 0 2 ##Rintaro time leaps
+131617 timeleap 0 3
+131835 minor 0 3 #Rintaro and Mayuri head to a different train station
+131930 minor 0 3 #Rintaro loses Mayuri while scouting ahead
+131953 minor 0 3 #Moeka sends Rintaro an email about a gelified Mayuri
+132002 minor 0 3 ##Rintaro time leaps
+131702 timeleap 0 4
+131834 minor 0 4 #Rintaro and Mayuri head to a subway station
+131953 minor 0 4 #Nae accidently pushes Mayuri in front of a train
+132045 minor 0 4 ##Rintaro time leaps
+131545 timeleap 0 5
+131550 minor 0 5 #Rintaro and Mayuri take a taxi but get caught in traffic
+131953 minor 0 5 #A Rounder stabs Mayuri
+132149 minor 0 5 ##Rintaro time leaps
+131549 timeleap 0 6
+131550 minor 0 6 #Rintaro takes Mayuri to a police station but fails to convince them she is in danger
+131800 minor 0 6 #Rintaro and Mayuri hide in a store
+131953 minor 0 6 #A police officer shoots Mayuri in commotion caused by an explosion
+132132 minor 0 6 ##Rintaro time leaps
+131432 timeleap 0 7
+131521 minor 0 7 #Rintaro invites Moeka to the roof of Radio Kaikan
+131730 minor 0 7 #Rintaro interrogates Moeka but is ambushed by Rounders
+131953 minor 0 7 #Mayuri is shot by Moeka when Rounders raid the FGL
+131956 minor 0 7 ##Rintaro time leaps
+131656 timeleap 0 8
+131738 minor 0 8 #Rintaro asks Kurisu for help and she recommends planning from an earlier time
+131844 both 0 8 ##Rintaro time leaps
+131344 timeleap 0 9
+131401 minor 0 9 #Rintaro asks Kurisu for help but Suzuha overhears
+131736 minor 0 9 #Suzuha reveals her identity and proposes using an IBM 5100 to delete the first D-Mail from Echelon
+131737 minor 0 9 #The FGL plan to fix Suzuha's time machine so she can acquire an IBM 5100
+131738 both 0 9 ##Rintaro time leaps
+111421 timeleap 0 10
+111500 minor 0 10 #The FGL plan to fix Suzuha's time machine and find her father
+122000 minor 0 10 #A street vendor informs Rintaro about a request to make Suzuha's father's pin
+131436 both 0 10 ##Rintaro time leaps
+111836 timeleap 0 11
+112000 minor 0 11 #Rintaro catches Itaru trying to replicate Suzuha's pin
+131630 multiminor 0 3 11 #Itaru finishes repairing Suzuha's time machine
+131720 multiminor 0 2 11 #Mayuri presents evidence that Itaru is Suzuha's father
+131733 multiboth 0 2 11 #Suzuha travels to 1975
+131900 multiminor 0 2 11 #Tennouji gives Rintaro Suzuha's letter and reveals her fate
+131939 split 0 11
+131941 both 0 11a ##Rintaro time leaps
+131940 shift 0 11b 2 #Rintaro sends himself a D-Mail# "Stop pursuit last mail is SERN trap"
+111941 timeleap 0 12
+121200 multiminor 0 2 12 #The FGL go on a bike ride
+131941 both 0 12 ##Rintaro time leaps
+111941 timeleap 0 13
+121300 minor 0 13 #Suzuha confronts Rintaro about his time leaping
+131700 both 0 13 #Rintaro and Suzuha travel to 1975# (END)
+131953 multiboth 2 9 0 #Mayuri does not die
+141953 minor 2 0 #Mayuri is shot when Rounders assault the FGL
+141953 major 2 0 #Mayuri dies
+141957 both 2 0 ##Rintaro time leaps
+141657 timeleap 2 1
+141658 minor 2 1 #Rintaro asks Kurisu for help and they plan to undo the remaining D-Mails
+141847 both 2 1 ##Rintaro time leaps
+131347 timeleap 2 2
+131600 multiminor 2 2 0 #Faris loses the RaiNet tournament
+131630 minor 2 2 #Faris and Rintaro devise a plan for her to win
+131838 both 2 2 ##Rintaro time leaps
+131038 timeleap 2 3
+131142 minor 2 3 #Rintaro gives Faris earplugs
+131600 minor 2 3 #Faris wins the RaiNet tournament
+131750 minor 2 3 #Faris remembers a previous worldline
+140859 split 2 3
+140900 shift 2 3b 4 #Rintaro sends Faris' father a D-Mail# "JK on ransomI luv u papaSee you soon"
+140900 minor 2 3a #Rintaro refuses to send the D-Mail
+141200 shift 2 3a 14 #Rintaro sends an unknown D-Mail to Faris' father
+141953 multiboth 14 7 0 #Mayuri does not die
+151935 both 4 0 #Mayuri is kidnapped by Rounders
+151944 both 4 0 ##Rintaro time leaps
+131044 timeleap 4 1
+131045 minor 4 1 #Rintaro asks Kurisu for help and he upsets Luka by telling her the truth
+141000 minor 4 1 #Luka asks Rintaro to be her boyfriend and he panics
+141035 both 4 1 ##Rintaro time leaps
+111435 timeleap 4 2
+111436 minor 4 2 #Rintaro asks Kurisu for help and he upsets Luka by telling her the truth
+121000 minor 4 2 #Luka asks Rintaro to be her boyfriend and he agrees
+151300 minor 4 2 #Rintaro and Luka attend ComiMa together and the date goes poorly
+151711 both 4 2 ##Rintaro time leaps
+151211 timeleap 4 3
+151300 minor 4 3 #Luka trains with Rintaro
+151730 minor 4 3 #Luka reveals she remembers a previous worldline
+151759 split 4 3
+151800 shift 4 3b 6 #Rintaro sends Luka's mother a D-Mail page# "*2*2292983183129298318312929"
+151800 minor 4 3a #Rintaro refuses to send the D-Mail
+151953 multiboth 4 2 3a #Mayuri suddenly dies
+201200 both 4 3a #Luka time leaps
+151200 timeleap 4 4
+151300 minor 4 4 #Luka cosplays for Mayuri
+151030 minor 6 0 #Moeka commits suicide
+151953 multiboth 6 3 0 #Mayuri does not die
+161953 both 6 0 #Mayuri suddenly dies
+162002 both 6 0 ##Rintaro time leaps
+112002 timeleap 6 1
+112130 minor 6 1 #Rintaro steals Moeka's phone
+112131 minor 6 1 #Rintaro sends several D-Mails to Moeka with her phone
+131317 minor 6 1 #Rintaro and Moeka follow Rounders collecting the IBM 5100
+131412 multiminor 6 2 1 #Rintaro and Moeka lose the trail
+131511 both 6 1 ##Rintaro time leaps
+131411 timeleap 6 2
+131511 both 6 2 ##Rintaro time leaps
+131411 timeleap 6 3
+131412 minor 6 3 #Rintaro and Moeka do not lose the trail
+131701 minor 6 3 #Tennouji receives the IBM 5100
+131816 both 6 3 ##Rintaro time leaps
+131316 timeleap 6 4
+131317 minor 6 4 #Rintaro do not follow the Rounders
+150630 both 6 4 # #Nae arrives
+150650 minor 6 4 #Rintaro and Moeka confront Tennouji
+150651 multiminor 6 2 4 #Tennouji kills himself
+151030 minor 6 4 #Nae stabs Moeka
+151049 both 6 4 ##Rintaro time leaps
+150649 timeleap 6 5
+150650 minor 6 5 #Moeka confronts Tennouji alone and Rintaro confronts Nae
+151021 shift 6 5 9 #Rintaro sends Moeka a D-Mail with FB's phone# "Stop search.PC unneeded.Stand by."
+150651 multiminor 9 2 0 #Tennouji does not die
+151030 multiminor 9 2 0 #Moeka does not die
+151127 both 9 0 ##Rintaro time leaps
+131527 timeleap 9 1
+131528 minor 9 1 #Rintaro realises saving Mayuri will kill Kurisu
+161953 multiboth 9 8 1 #Mayuri does not die
+171953 minor 9 1 #Mayuri is hit by a car
+171953 major 9 1 #Mayuri dies
+172153 both 9 1 ##Rintaro time leaps
+151353 timeleap 9 2
+161630 minor 9 2 #Kurisu demands that Rintaro save Mayuri
+161631 split 9 2
+161632 minor 9 2a #Rintaro chooses Mayuri
+170900 shift 9 2a 15 #The FGL deletes the first D-Mail from SERN's IBM 5100 database
+171953 both 15 0 #Mayuri does not die
+211200 multiboth 15 2 0 #The FGL dismantle the Phonewave
+161731 minor 9 2b #Rintaro hires bodyguards to protect Mayuri
+171953 multiboth 9 5 2b #Mayuri dies
+172000 multiboth 9 5 2b ##Rintaro time leaps
+161730 timeleap 9 3
+161731 minor 9 3 #Rintaro takes Mayuri to South America
+161730 timeleap 9 4
+161731 minor 9 4 #Rintaro cripples SERN's servers
+161730 timeleap 9 5
+161731 minor 9 5 #Rintaro gets Mayuri admitted to a hospital
+161730 timeleap 9 6
+161731 minor 9 6 #Rintaro tries to save Mayuri
+161730 timeleap 9 7
+161731 minor 9 7 #Rintaro confesses to Kurisu
+170900 shift 9 7 11 #The FGL deletes the first D-Mail from SERN's IBM 5100 database
+171953 both 11 0 #Mayuri does not die
