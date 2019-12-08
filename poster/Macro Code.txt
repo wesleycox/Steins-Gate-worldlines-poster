@@ -1,0 +1,263 @@
+Sub createTag1(ByVal x1 As Single, ByVal y1 As Single, ByVal x2 As Single, ByVal y2 As Single, ByVal lThickness As Double)
+    With ActivePresentation.Slides(1).Shapes.AddLine(mmToPoints(x1), mmToPoints(y1), mmToPoints(x2), mmToPoints(y2)).Line
+        .Weight = mmToPoints(lThickness)
+        .ForeColor.RGB = RGB(0, 0, 0)
+        .DashStyle = msoLineRoundDot
+    End With
+End Sub
+
+Sub createTag2(ByVal x1 As Single, ByVal y1 As Single, ByVal x2 As Single, ByVal y2 As Single, ByVal x3 As Single, ByVal y3 As Single, _
+ByVal lThickness As Double)
+    Dim lineArray(1 To 3, 1 To 2) As Single
+    lineArray(1, 1) = mmToPoints(x1)
+    lineArray(1, 2) = mmToPoints(y1)
+    lineArray(2, 1) = mmToPoints(x2)
+    lineArray(2, 2) = mmToPoints(y2)
+    lineArray(3, 1) = mmToPoints(x3)
+    lineArray(3, 2) = mmToPoints(y3)
+    With ActivePresentation.Slides(1).Shapes.AddPolyline(lineArray).Line
+        .Weight = mmToPoints(lThickness)
+        .ForeColor.RGB = RGB(0, 0, 0)
+        .DashStyle = msoLineRoundDot
+    End With
+End Sub
+
+Sub createTag3(ByVal x1 As Single, ByVal y1 As Single, ByVal x2 As Single, ByVal y2 As Single, ByVal x3 As Single, ByVal y3 As Single, _
+ByVal x4 As Single, ByVal y4 As Single, ByVal lThickness As Double)
+    Dim lineArray(1 To 4, 1 To 2) As Single
+    lineArray(1, 1) = mmToPoints(x1)
+    lineArray(1, 2) = mmToPoints(y1)
+    lineArray(2, 1) = mmToPoints(x2)
+    lineArray(2, 2) = mmToPoints(y2)
+    lineArray(3, 1) = mmToPoints(x3)
+    lineArray(3, 2) = mmToPoints(y3)
+    lineArray(4, 1) = mmToPoints(x4)
+    lineArray(4, 2) = mmToPoints(y4)
+    With ActivePresentation.Slides(1).Shapes.AddPolyline(lineArray).Line
+        .Weight = mmToPoints(lThickness)
+        .ForeColor.RGB = RGB(0, 0, 0)
+        .DashStyle = msoLineRoundDot
+    End With
+End Sub
+
+Sub createTag4(ByVal x1 As Single, ByVal y1 As Single, ByVal x2 As Single, ByVal y2 As Single, ByVal x3 As Single, ByVal y3 As Single, _
+ByVal x4 As Single, ByVal y4 As Single, ByVal x5 As Single, ByVal y5 As Single, ByVal lThickness As Double)
+    Dim lineArray(1 To 5, 1 To 2) As Single
+    lineArray(1, 1) = mmToPoints(x1)
+    lineArray(1, 2) = mmToPoints(y1)
+    lineArray(2, 1) = mmToPoints(x2)
+    lineArray(2, 2) = mmToPoints(y2)
+    lineArray(3, 1) = mmToPoints(x3)
+    lineArray(3, 2) = mmToPoints(y3)
+    lineArray(4, 1) = mmToPoints(x4)
+    lineArray(4, 2) = mmToPoints(y4)
+    lineArray(5, 1) = mmToPoints(x5)
+    lineArray(5, 2) = mmToPoints(y5)
+    With ActivePresentation.Slides(1).Shapes.AddPolyline(lineArray).Line
+        .Weight = mmToPoints(lThickness)
+        .ForeColor.RGB = RGB(0, 0, 0)
+        .DashStyle = msoLineRoundDot
+    End With
+End Sub
+
+Sub createText(ByVal x As Double, ByVal y As Double, ByVal xgap As Double, ByVal message As String, ByVal size As Double, _
+ByVal rot As Double)
+    With ActivePresentation.Slides(1).Shapes.AddTextbox(msoTextOrientationHorizontal, mmToPoints(x), mmToPoints(y), mmToPoints(xgap), 0)
+        .Rotation = rot
+        With .TextFrame
+            .TextRange.Text = message
+        End With
+        With .TextEffect
+            .FontName = "Droid Sans Fallback"
+            .FontSize = size
+        End With
+        .Top = mmToPoints(y)
+    End With
+End Sub
+
+Sub createReturnZ(ByVal x As Double, ByVal y As Double, ByVal xgap As Double, ByVal ygap As Double, ByVal rUpper, _
+ByVal lThickness As Double, ByVal hasArrow As Boolean)
+    Dim rLower As Double
+    rLower = ygap - rUpper
+    With ActivePresentation.Slides(1).Shapes.AddLine(mmToPoints(x + rLower), mmToPoints(y + rUpper), mmToPoints(x + xgap - rUpper), _
+    mmToPoints(y + ygap - rLower)).Line
+        .Weight = mmToPoints(lThickness)
+        .ForeColor.RGB = RGB(127, 127, 127)
+        .DashStyle = msoLineDash
+    End With
+    With ActivePresentation.Slides(1).Shapes.AddShape(msoShapeArc, mmToPoints(x + rLower), mmToPoints(y + rUpper), mmToPoints(rLower), _
+    mmToPoints(rLower))
+        With .Line
+            .Weight = mmToPoints(lThickness)
+            .ForeColor.RGB = RGB(127, 127, 127)
+            .DashStyle = msoLineDash
+            If hasArrow Then
+                .BeginArrowheadStyle = msoArrowheadTriangle
+                .BeginArrowheadLength = msoArrowheadShort
+                .BeginArrowheadWidth = msoArrowheadWidthMedium
+            End If
+        End With
+        .Rotation = 270
+    End With
+    With ActivePresentation.Slides(1).Shapes.AddShape(msoShapeArc, mmToPoints(x + xgap - rUpper), mmToPoints(y - rUpper), _
+    mmToPoints(rUpper), mmToPoints(rUpper))
+        With .Line
+            .Weight = mmToPoints(lThickness)
+            .ForeColor.RGB = RGB(127, 127, 127)
+            .DashStyle = msoLineDash
+        End With
+        .Rotation = 90
+    End With
+End Sub
+
+Sub createVerticalArrow(ByVal x As Double, ByVal y As Double, ByVal lLength As Double, ByVal lThickness As Double)
+    With ActivePresentation.Slides(1).Shapes.AddLine(mmToPoints(x), mmToPoints(y), mmToPoints(x), mmToPoints(y + lLength)).Line
+        .Weight = mmToPoints(lThickness)
+        .ForeColor.RGB = RGB(0, 0, 0)
+        .EndArrowheadStyle = msoArrowheadTriangle
+        .EndArrowheadLength = msoArrowheadShort
+        .EndArrowheadWidth = msoArrowheadNarrow
+    End With
+End Sub
+
+Sub createRoundedRectangle(ByVal x As Double, ByVal y As Double, ByVal rWidth As Double, ByVal rHeight As Double, _
+ByVal lThickness As Double)
+    With ActivePresentation.Slides(1).Shapes.AddShape(msoShapeRoundedRectangle, mmToPoints(x), mmToPoints(y), mmToPoints(rWidth), _
+    mmToPoints(rHeight))
+        With .Line
+            .Weight = mmToPoints(lThickness)
+            .ForeColor.RGB = RGB(0, 0, 0)
+        End With
+        .Fill.ForeColor.RGB = RGB(255, 255, 255)
+    End With
+End Sub
+
+Sub deleteAll()
+    For ShapeIndex = ActivePresentation.Slides(1).Shapes.Count To 1 Step -1
+        ActivePresentation.Slides(1).Shapes(ShapeIndex).Delete
+    Next
+End Sub
+
+Sub createHorizontalLine(ByVal x As Double, ByVal y As Double, ByVal lLength As Double, ByVal lThickness As Double, _
+ByVal wlName As String)
+    With ActivePresentation.Slides(1).Shapes.AddLine(mmToPoints(x), mmToPoints(y), mmToPoints(x + lLength), mmToPoints(y)).Line
+        .Weight = mmToPoints(lThickness)
+        .ForeColor.RGB = getColourForWL(wlName)
+    End With
+End Sub
+
+Sub createCurvedConnector(ByVal x As Double, ByVal y As Double, ByVal hGap As Double, ByVal vGap As Double, _
+ByVal lThickness As Double, ByVal wlName As String)
+    With ActivePresentation.Slides(1).Shapes.AddConnector(msoConnectorCurve, mmToPoints(x), mmToPoints(y), mmToPoints(x + hGap), _
+    mmToPoints(y + vGap)).Line
+        .Weight = mmToPoints(lThickness)
+        .ForeColor.RGB = getColourForWL(wlName)
+    End With
+End Sub
+
+Sub initialise(ByVal size As String, ByVal margin As Double, ByVal portrait As Boolean)
+    Dim pWidth As Double
+    Dim pHeight As Double
+    If portrait Then
+        pWidth = paperWidth(size) - (2# * margin)
+        pHeight = paperHeight(size) - (2# * margin)
+    Else
+        pWidth = paperHeight(size) - (2# * margin)
+        pHeight = paperWidth(size) - (2# * margin)
+    End If
+    With ActivePresentation.PageSetup
+        .SlideWidth = mmToPoints(pWidth)
+        .SlideHeight = mmToPoints(pHeight)
+    End With
+    Call createRectangle(margin, margin, pWidth - (2# * margin), pHeight - (2# * margin))
+End Sub
+
+Sub createRectangle(ByVal x As Double, ByVal y As Double, ByVal rWidth As Double, ByVal rHeight As Double)
+    With ActivePresentation.Slides(1).Shapes.AddShape(msoShapeRectangle, mmToPoints(x), mmToPoints(y), mmToPoints(rWidth), _
+    mmToPoints(rHeight))
+        With .Line
+            .Weight = mmToPoints(1#)
+            .ForeColor.RGB = RGB(0, 0, 0)
+        End With
+        .Fill.Visible = msoFalse
+    End With
+End Sub
+
+Function paperHeight(ByVal size As String) As Double
+    Select Case size
+        Case "A4"
+            paperHeight = 297#
+        Case "A3"
+            paperHeight = 420#
+        Case "A2"
+            paperHeight = 594#
+        Case "A1"
+            paperHeight = 841#
+        Case "A0"
+            paperHeight = 1189#
+    End Select
+    Exit Function
+End Function
+
+Function paperWidth(ByVal size As String) As Double
+    Select Case size
+        Case "A4"
+            paperWidth = 210#
+        Case "A3"
+            paperWidth = 297#
+        Case "A2"
+            paperWidth = 420#
+        Case "A1"
+            paperWidth = 594#
+        Case "A0"
+            paperWidth = 841#
+    End Select
+    Exit Function
+End Function
+
+Function mmToPoints(ByVal value As Double) As Double
+    mmToPoints = (72# * value / 25.4)
+    Exit Function
+End Function
+
+Function getColourForWL(ByVal name As String) As Long
+    Select Case name
+        Case "0.X"
+            getColourForWL = RGB(255, 0, 0)
+        Case "0.337187"
+            getColourForWL = RGB(200, 55, 55)
+        Case "0.409420"
+            getColourForWL = RGB(200, 170, 55)
+        Case "0.409431"
+            getColourForWL = RGB(255, 180, 0)
+        Case "0.456903"
+            getColourForWL = RGB(255, 255, 0)
+        Case "0.456914"
+            getColourForWL = RGB(180, 255, 0)
+        Case "0.523299"
+            getColourForWL = RGB(150, 200, 55)
+        Case "0.523307"
+            getColourForWL = RGB(0, 255, 0)
+        Case "0.517015"
+            getColourForWL = RGB(55, 200, 170)
+        Case "0.571024"
+            getColourForWL = RGB(0, 255, 200)
+        Case "0.571046"
+            getColourForWL = RGB(0, 230, 255)
+        Case "1.048596"
+            getColourForWL = RGB(0, 170, 255)
+        Case "1.130205"
+            getColourForWL = RGB(0, 0, 255)
+        Case "1.130238"
+            getColourForWL = RGB(150, 0, 255)
+        Case "1.130426"
+            getColourForWL = RGB(255, 0, 255)
+        Case "1.13X"
+            getColourForWL = RGB(255, 0, 150)
+        Case ".275349"
+            getColourForWL = RGB(180, 75, 100)
+        Case Else
+            getColourForWL = RGB(0, 0, 0)
+    End Select
+    Exit Function
+End Function
